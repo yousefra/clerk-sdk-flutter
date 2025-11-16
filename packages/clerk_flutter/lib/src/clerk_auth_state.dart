@@ -218,7 +218,7 @@ class ClerkAuthState extends clerk.Auth with ChangeNotifier {
 
     if (url case String url) {
       final uri = Uri.parse(url);
-      if (redirect == null) {
+      if (redirectUrl.startsWith(clerk.ClerkConstants.oauthRedirect)) {
         // The default redirect: we handle this in-app
         final redirectUrl = await showDialog<String>(
           context: context,
