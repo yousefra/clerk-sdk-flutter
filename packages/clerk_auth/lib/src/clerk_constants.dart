@@ -15,7 +15,7 @@ sealed class ClerkConstants {
   static const jsVersion = '4.70.0';
 
   /// The url used to catch oauth redirects
-  static const oauthRedirect = 'com.clerk.flutter://callback';
+  static const oauthRedirect = 'com.malahi.booking://oauth-callback';
 
   /// The user agent to use for oauth
   static const userAgent = 'ClerkFlutterSDK/$flutterSdkVersion';
