@@ -572,6 +572,7 @@ class Auth {
             emailAddress: emailAddress,
             phoneNumber: phoneNumber,
             legalAccepted: legalAccepted,
+            redirectUrl: redirectUrl,
           )
           .then(_housekeeping);
     }
