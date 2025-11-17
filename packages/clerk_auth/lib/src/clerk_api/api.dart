@@ -195,6 +195,7 @@ class Api with Logging {
     String? code,
     String? token,
     bool? legalAccepted,
+    String? redirectUrl,
     Map<String, dynamic>? metadata,
   }) async {
     return await _fetchApiResponse(
@@ -211,6 +212,7 @@ class Api with Logging {
         'code': code,
         'token': token,
         'legal_accepted': legalAccepted,
+        'redirect_url': redirectUrl,
         if (metadata case Map<String, dynamic> metadata) //
           'unsafe_metadata': json.encode(metadata),
       },
